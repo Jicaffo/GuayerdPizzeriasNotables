@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.f2 {
+    width: 50%; /* TODO: Ver como hacer más grande para tamaños más chicos de pantalla */
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.renglon-form {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-text {
+    width: 300px;
+    min-width: 150px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    border: 1px solid #60371E;
+    color: #60371E;
+}
+
+.inline {
+    height: 25px;
+}
+
+.boton {
+    width: 150px;
+    height: 30px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #A6341B;
+    color: #F9C743;
+    text-shadow: 1px 1px 1px #60371E;
+    border-style: none;
+    box-shadow: 1px 1px 1px #60371E;
+}

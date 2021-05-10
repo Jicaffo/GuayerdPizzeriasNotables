@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Pizzerías Notables</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+
+<body>
+    <!-- Paleta de colores para pruebas -->
+    <!-- <div class="paleta">
+        <div class="color-paleta c1"></div>
+        <div class="color-paleta c2"></div>
+        <div class="color-paleta c3"></div>
+        <div class="color-paleta c4"></div>
+        <div class="color-paleta c5"></div>
+    </div> -->
+
+    <div class="banner">
+        <img src="img/bannerProyectoPizzeria01.jpg" 
+        alt="Banner Pizzerías Notables" 
+        class="img-banner">
+    </div>
+    
+    <div class="fondo-menu">
+        <ul class="lista-menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="pizzerias-notables.html">Pizzerías Notables</a>
+            </li>
+
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cuerpo"> 
+
+        <h1>Contacto</h1>
+        
+        <div class="recuadro-fondo">
+            <form action="https://ptsv2.com/t/jicaffo/post" method="POST" class="form">
+                <div class="f2">
+                    <div class="renglon-form">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" placeholder="Frodo Bolson" class="input-text inline">
+                    </div>
+                    <div class="renglon-form">
+                        <label for="email">E-Mail: </label>
+                        <input type="email" name="email" placeholder="f.bolson@lcomunidaddelanillo.com" class="input-text inline">
+                    </div>
+                    <div class="renglon-form">
+                        <label for="mensaje">Mensaje: </label>
+                        <textarea name="extra" cols="" rows="10" placeholder="Tenés alguna sugerencia o comentario para dejarnos?"class="input-text"></textarea>
+                    </div>
+                    <div class="renglon-form boton">
+                        <input type="submit" value="Enviar" class="boton">
+                    </div>
+                </div>
+            </form>
+        </div>            
+    </div>
+</body>
+</html>

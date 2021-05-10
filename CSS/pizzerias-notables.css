@@ -1,0 +1,31 @@
+.pizzeria {
+    margin-bottom: 25px;
+}
+
+.cont-piz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*flex-wrap: wrap;*/    /* No logré hacer que el wrap se active según en ancho. */
+    /*background-color: grey;   /* Para pruebas*/
+}
+
+.cont-img-piz{
+    margin-right: 20px;
+    min-width: 100px;   /* Funcionan pero no me achica las imágenes al mismo tiempo */
+    max-width: 200px;
+    /*background-color: red;    /*No entiendo por qué queda un borde por debajo que no pude sacar*/
+}
+
+.img-piz {
+    /*min-width: 100px; /* No logré hacerlo funcionar, no me lo toma */
+    /*max-width: 200px; /* No logré hacerlo funcionar, lo toma como medida fija */
+    width: 100%;
+    box-shadow: 2px 2px 3px #60371E;
+    /*background-color: ivory;  /* Para pruebas*/
+}
+
+.info-piz {
+    margin: 0px; /*a borrar, de prueba*/
+    /*background-color: khaki;  /* Para pruebas*/
+}
