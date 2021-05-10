@@ -6,15 +6,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*flex-wrap: wrap;*/    /* No logré hacer que el wrap se active según en ancho. */
-    /*background-color: grey;   /* Para pruebas*/
 }
 
 .cont-img-piz{
     margin-right: 20px;
-    min-width: 100px;   /* Funcionan pero no me achica las imágenes al mismo tiempo */
-    max-width: 200px;
+    width: 200px;
     /*background-color: red;    /*No entiendo por qué queda un borde por debajo que no pude sacar*/
+}
+
+@media (max-width: 720px) {
+    .cont-piz {
+        flex-wrap: wrap;
+    }
+
+    .cont-img-piz{
+        width: 130px;
+    }
 }
 
 .img-piz {
