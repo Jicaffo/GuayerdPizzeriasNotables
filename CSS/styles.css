@@ -72,7 +72,7 @@ a:hover{
 }
 
 .banner {
-    background-color: #A6341B;  /* No poniendo fondo, no entiendo por qué, pero queda un borde por debajo que no pude sacar*/
+    /*background-color: #A6341B;  /* No poniendo fondo, no entiendo por qué, pero queda un borde por debajo que no pude sacar*/
     height: 100%;
 }
 
