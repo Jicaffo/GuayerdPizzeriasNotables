@@ -10,8 +10,13 @@
 
 .cont-img-piz{
     margin-right: 20px;
+    /*background-color: red;    /*No entiendo por qué queda un borde por debajo que no pude sacar*/
+}
+
+.img-piz {
     width: 200px;
-    background-color: red;    /*No entiendo por qué queda un borde por debajo que no pude sacar*/
+    box-shadow: 2px 2px 3px #60371E;
+    /*background-color: ivory;  /* Para pruebas*/
 }
 
 @media (max-width: 720px) {
@@ -19,17 +24,9 @@
         flex-wrap: wrap;
     }
 
-    .cont-img-piz{
+    .img-piz{
         width: 130px;
     }
-}
-
-.img-piz {
-    /*min-width: 100px; /* No logré hacerlo funcionar, no me lo toma */
-    /*max-width: 200px; /* No logré hacerlo funcionar, lo toma como medida fija */
-    width: 100%;
-    box-shadow: 2px 2px 3px #60371E;
-    /*background-color: ivory;  /* Para pruebas*/
 }
 
 .info-piz {
