@@ -18,7 +18,7 @@
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    background-color: honeydew; /*Pruebas*/
+    /*background-color: honeydew; /*Pruebas*/
 }
 
 .input-text {
@@ -47,23 +47,21 @@
 }
 
 @media (max-width: 900px) {
-    .f2 {   /* TODO: Falta hacer que quede bien centrado, sigue tomando el 50% de ancho */
-        width: fit-content;
-        background-color: grey;
-        /*width: 50%;
-        height: max-content;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;*/
+    .f2 {
+        width: max-content;
+      /*background-color: grey; /* Pruebas */
     }
    
-    .renglon-form { /* TODO: que el boton se desplace a la izquierda al achicar */ 
+    .renglon-form {
         flex-direction: column;
         justify-content: flex-start;
     }
 
     .input-text {
         width: 200px;
+    }
+    .boton {
+        align-self: flex-start;
     }
     
 }
