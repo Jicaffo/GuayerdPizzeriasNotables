@@ -18,7 +18,7 @@
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    background-color: honeydew; /*Pruebas*/
+    /*background-color: honeydew; /*Pruebas*/
 }
 
 .input-text {
@@ -47,9 +47,9 @@
 }
 
 @media (max-width: 900px) {
-    .f2 {   /* TODO: Falta hacer que quede bien centrado, sigue tomando el 50% de ancho */
-        width: fit-content;
-        background-color: grey;
+    .f2 {
+        width: max-content;
+      /*background-color: grey; /* Pruebas */
         /*width: 50%;
         height: max-content;
         display: flex;
@@ -64,6 +64,9 @@
 
     .input-text {
         width: 200px;
+    }
+    .boton {
+        align-self: flex-start;
     }
     
 }
