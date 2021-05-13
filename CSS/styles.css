@@ -115,7 +115,7 @@ a:hover{
 }
 
 .footer{
-    height: 40px;
+    height: 40px; /* TODO: hacer que cubra hasta el final visible del body */
     margin-top: 10px;
     padding: 5px;
     background-color: #A6341B;
