@@ -10,6 +10,7 @@
 
 .cont-img-piz{
     margin-right: 20px;
+    min-width: max-content;
     /*background-color: red;    /*No entiendo por qué queda un borde por debajo que no pude sacar*/
 }
 
