@@ -5,7 +5,7 @@
 }
 
 .f2 {
-    width: 50%; /* TODO: Ver como hacer más grande para tamaños más chicos de pantalla */
+    width: 55%; /* TODO: Ver como hacer más grande para tamaños más chicos de pantalla */
     height: max-content;
     display: flex;
     flex-direction: column;

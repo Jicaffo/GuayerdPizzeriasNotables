@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap');
+
 /* Reset margins & paddings */
 * {
     margin: 0px;
     padding: 0px;
+    min-width: 0%
 }
 
 /* Color Theme Swatches in Hex */
@@ -11,7 +16,7 @@
 .Feng-Shui-Soft-Fire-II-4-hex { color: #F9C743; } /* Texto Menú */
 .Feng-Shui-Soft-Fire-II-5-hex { color: #C7C8C4; } /* Fondo body*/
 
-/* Paleta de colores (para pruebas) */
+/* Paleta de colores temporal para pruebas 
 .paleta {
     height: 100px;
     display: flex;;
@@ -28,28 +33,47 @@
 .c4 { background-color: #F9C743}
 .c5 { background-color: #C7C8C4}
 
+*/
+
+
 /* ESTILOS */
+html {
+    height: 100%;
+}
+
 body {
     background-color: #C7C8C4;
     color: #60371E;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Noto Sans TC', 'Nunito', 'Catamaran', Arial, sans-serif;
+    box-sizing: border-box;
     min-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 0.8em;
+    margin-bottom: 1.2em;
+    font-size: xx-large;
     font-weight: bolder;
 }
 
 h2 {
-    margin-top: 5px;
-    margin-bottom: 25px;
+    margin-top: 0.3em;
+    margin-bottom: 1.6em;
+    font-size: x-large;
     font-style: italic;
 }
 
+h3 {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: large;
+}
+
 p {
-    margin-block: 15px;
+    margin-block: 1em;
 }
 
 p.var {
@@ -65,6 +89,11 @@ li {
 a {
     text-decoration: none;
     color: #F9C743;
+    /*TODO: Quitar color violeta de link visitado */
+}
+
+a:visited{
+    color: none; 
 }
 
 a:hover{
@@ -73,7 +102,9 @@ a:hover{
 
 .banner {
     background-color: #A6341B;  /* No poniendo fondo, no entiendo por qué, pero queda un borde por debajo que no pude sacar*/
-    height: 100%;
+    flex-grow: 0;
+    color: #F9C743;
+    /*height: 100%;/**/
 }
 
 .img-banner {
@@ -81,7 +112,7 @@ a:hover{
 }
 
 .fondo-menu{
-    height: 40px;
+    height: 2.5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,28 +127,74 @@ a:hover{
     align-items: center;
     font-weight: bold;
     text-shadow: 1px 1px 1px #60371E;
+    color: #F9C743;
 }
 
-.cuerpo {
-    padding: 30px;
-    margin-bottom: 20px;
+.cuerpo-principal {
+    flex-grow: 1;
+    display: flex;
+}
+
+.section {
+    padding: 2em;
     display: flex;
     flex-direction: column;
+    flex: 3;
     /*align-content: center;  /* No lo logré alinear .recuadro-fondo al centro para achicarlo*/
     /*background-color: aquamarine; /* Test */
 }
 
 .recuadro-fondo {
     /*width: 80%;   /* No lo logré centrar como para poder reducirlo. */
-    padding: 30px;
+    padding: 2em;
     background-color: #D1BF91;
     box-shadow: 3px 3px 5px #60371E;
 }
+.videoframe {
+    margin-top: 3em;
+    border-top: 1px solid #60371E;
+    padding-block: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aside {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 300px;
+    color: #60371E;
+    background-color: rgb(182, 182, 182); /* Opcion 1: agregando un color a la paleta */
+    /*color: #D1BF91;
+    background-color: #60371E; /* Opcion 2: Sin salir de la paleta) */
+
+}
+
+a.no-format-link {
+    color: #60371E;
+}
+
+.noticia-aside {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.bottom-border {
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #60371E;
+    margin-bottom: 1em;
+}
 
 .footer{
-    height: 40px;
-    margin-top: 10px;
-    padding: 5px;
+    min-height: 5em; /* TODO: hacer que cubra hasta el final visible del body */
+    flex-grow: 0;
     background-color: #A6341B;
     color: #F9C743;
     opacity: 40%;
