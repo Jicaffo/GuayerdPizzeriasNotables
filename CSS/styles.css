@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;700&display=swap');
+
 /* Reset margins & paddings */
 * {
     margin: 0px;
@@ -40,7 +44,7 @@ html {
 body {
     background-color: #C7C8C4;
     color: #60371E;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Noto Sans TC', 'Nunito', 'Catamaran', Arial, sans-serif;
     box-sizing: border-box;
     min-width: 400px;
     height: 100%;
@@ -49,17 +53,23 @@ body {
 }
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 0.8em;
+    margin-bottom: 1.2em;
     font-size: xx-large;
     font-weight: bolder;
 }
 
 h2 {
-    margin-top: 5px;
-    margin-bottom: 25px;
+    margin-top: 0.3em;
+    margin-bottom: 1.6em;
     font-size: x-large;
     font-style: italic;
+}
+
+h3 {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: large;
 }
 
 p {
@@ -89,8 +99,6 @@ a:visited{
 a:hover{
     color: #60371E; 
 }
-
-
 
 .banner {
     background-color: #A6341B;  /* No poniendo fondo, no entiendo por qué, pero queda un borde por debajo que no pude sacar*/
@@ -142,8 +150,18 @@ a:hover{
     background-color: #D1BF91;
     box-shadow: 3px 3px 5px #60371E;
 }
+.videoframe {
+    margin-top: 3em;
+    border-top: 1px solid #60371E;
+    padding-block: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.a-aside {
+}
+
+.aside {
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -156,16 +174,22 @@ a:hover{
 
 }
 
-a.a-aside {
-    color: none;
+a.no-format-link {
+    color: #60371E;
 }
 
-.aside {
+.noticia-aside {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     
+}
+
+.bottom-border {
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #60371E;
+    margin-bottom: 1em;
 }
 
 .footer{

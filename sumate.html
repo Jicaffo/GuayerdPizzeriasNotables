@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Pizzerías Notables</title>
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/contacto.css">
+    <link rel="stylesheet" href="CSS/formularios.css">
 </head>
 
 <body>
@@ -39,29 +39,83 @@
                 <li>
                     <a href="contacto.html">Contacto</a>
                 </li>
+
+                <li>
+                    <a href="sumate.html">Soy notable!</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <div class="cuerpo-principal">
-        <div class="section"> 
+        <section class="section"> 
 
-            <h1>Contacto</h1>
-            
+            <h1>Postulá tu pizzería</h1>
+                      
             <div class="recuadro-fondo">
-                <form action="https://ptsv2.com/t/jicaffo/post" method="POST" class="form">
+
+                <p>
+                    ¿Creés que tu pizzería debería estar entre las más notables de Buenos Aires?... ¿Conocés alguna otra que lo esté?... Envianos la siguiente información para poder evaluarla y posteriormente agregarla a nuestra web!.
+                </p>
+
+                <form action="https://ptsv2.com/t/um015-1619037201/post" method="POST" class="form">
                     <div class="f2">
                         <div class="renglon-form">
-                            <label for="nombre">Nombre: </label>
-                            <input type="text" name="nombre" placeholder="Frodo Bolson" class="input-text inline">
+                            <label for="nombre-usuario">Nombre de usuario: </label>
+                            <input type="text" name="nombre-usuario" placeholder="Frodo Bolson" class="input-text inline">
+                        </div>
+                        <div class="renglon-form">
+                            <label for="pass">Contraseña: </label>
+                            <input type="password" name="pass" placeholder="123456" class="input-text inline">
+                        </div>
+                        <div class="renglon-form">
+                            <label for="pass2">Repetir Contraseña: </label>
+                            <input type="password" name="pass2" placeholder="123456" class="input-text inline">
                         </div>
                         <div class="renglon-form">
                             <label for="email">E-Mail: </label>
                             <input type="email" name="email" placeholder="f.bolson@lcomunidaddelanillo.com" class="input-text inline">
                         </div>
                         <div class="renglon-form">
-                            <label for="mensaje">Mensaje: </label>
-                            <textarea name="extra" cols="" rows="10" placeholder="Tenés alguna sugerencia o comentario para dejarnos?"class="input-text"></textarea>
+                            <label for="tel">Teléfono: </label>
+                            <input type="tel" name="tel" placeholder="+54 9 11 1111 1111" class="input-text inline">
+                        </div>
+                        <div class="renglon-form">
+                            <label for="dir">Dirección: </label>
+                            <input type="text" name="dir" placeholder="Av. Siempreviva 1234" class="input-text inline">
+                        </div>
+                        <div class="renglon-form">
+                            <label for="barrio">Barrio: </label>
+                            <select name="barrio" class="input-text inline">
+                                <option value="" selected disabled>Seleccionar</option>
+                                <option value="B">Boedo</option>
+                                <option value="A">Almagro</option>
+                                <option value="O">Otros</option>
+                            </select>
+                        </div>
+                        <div class="renglon-form">
+                            <label for="cant-sucursales">Cant. de sucursales: </label>
+                            <input type="number" name="cant-sucursales" placeholder="0" class="input-text inline">
+                        </div>
+                        <div class="renglon-form">
+                            <label for="fecha-inicio">Inicio de actividades: </label>
+                            <input type="date" name="fecha-inicio" class="input-text inline">
+                        </div>
+                        <div class="renglon-form">
+                            <label for="fotos">Foto/s: </label>
+                            <input type="file" name="fotos" accept="image/*" multiple class="input-text inline" >
+                        </div>
+                        <div class="renglon-form">
+                            <label for="por-que">Por qué deberíamos incluírla?: </label>
+                            <textarea name="por-que" cols="" rows="10" placeholder='Historia, anécdotas, datos de color etc.'class="input-text"></textarea>
+                        </div>
+                        <div class="renglon-form">
+                            <label for="suscribe"> Notificarme al agregar nuevas pizzerías:</label>
+                            <input type="checkbox" name="suscribe" class="input-text inline">
+                        </div>
+                        <div class="renglon-form">
+                            <label for="rate">Como evaluás nuestra web?: </label>
+                            <input type="range" name="rate" class="input-text inline">
                         </div>
                         <div class="renglon-form boton">
                             <input type="submit" value="Enviar" class="boton">
@@ -69,21 +123,37 @@
                     </div>
                 </form>
             </div>            
-        </div>
+        </section>
 
-        <a href="https://es.wikipedia.org/wiki/Sistema_solar" class="a-aside">
-            <aside class="aside">
-                <header>
-                    <h2>¿Qué sabés del sistema solar?</h2>
-                </header>
-                <p>
-                    Es el sistema planetario que liga por gravedad a un conjunto de objetos astronómicos girando alrededor de una única estrella conocida con el nombre de "Sol". Descubrí más haciendo click en cualquier lugar de este apartado.
-                </p>
-                <img    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Planetas_del_Sistema_Solar_a_escala..png/300px-Planetas_del_Sistema_Solar_a_escala..png"
-                        alt="Esquema del sol y los planetas del sistema solar."
-                        class="img-banner">
-            </aside>
-        </a>
+        <aside class="aside">
+            <header>
+                <h2>Noticias del mundo de la pizza</h2>
+            </header>
+            
+            <a href="https://www.infobae.com/tendencias/2019/06/07/las-29-mejores-pizzerias-de-buenos-aires-para-conocer/" class="bottom-border no-format-link">
+                <div class="noticia-aside">
+                    <h3>Las 29 mejores pizzerías de Buenos Aires</h3>
+                    <img    src="https://www.infobae.com/new-resizer/vYh7V2DrMcMsgZZtSEI0yHpzoyg=/768x432/filters:format(jpg):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/06/06183622/pizza-destacada-los-maestros.jpg"
+                            alt="Porción de pizza de tomate, morrones y verdeo."
+                            class="img-banner">
+                    <p>
+                        La pizza es una de las comidas que no puede faltar en la mesa o en la salida a comer algún día en la semana. Las clásicas de muzzarella o las de fugazzetta rellena invaden los hogares de los argentinos para acompañar con una rica cerveza en una reunión familiar o con amigos...
+                    </p>
+                </div>
+            </a>
+
+            <a href="https://www.elmundo.es/metropoli/gastronomia/2021/05/12/6093e80021efa0f40f8b45ba.html" class="no-format-link">
+                <div class="bottom-border noticia-aside">
+                    <h3>4 pizzerías para seguir adorando este 'hit' italiano en Madrid</h3>
+                    <img    src="https://phantom-elmundo.unidadeditorial.es/b03f934169ea7e13905b7dc57fa045f9/crop/0x605/2044x1965/resize/473/f/webp/assets/multimedia/imagenes/2021/05/06/16203018809199.jpg"
+                            alt="Porción de pizza de tomate, morrones y verdeo."
+                            class="img-banner"> 
+                    <p>
+                        Es uno de los platos más universales que existen. Está rica con tres ingredientes, pero también brilla con mezclas menos convencionales. Madrid cuenta ya con una buena lista de sitios para comer excelentes pizzas. Aquí tres incorporaciones que hemos descubierto y una que está a punto de caramelo y va a dar mucho que hablar...
+                    </p>
+                </div>   
+            </a>   
+        </aside>
 
     </div>
     
